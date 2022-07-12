@@ -1,0 +1,12 @@
+{
+  "name": "projet_un",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./styles.css",
+    "prefix": "postcss ./main.scss:./styles.css --use autoprefixer -d"
+  },
+  "author": "",
+  "license": "ISC"
+}
