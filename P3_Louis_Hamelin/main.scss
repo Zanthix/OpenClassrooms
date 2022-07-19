@@ -2,65 +2,113 @@ $primary-color: #9356DC;
 $secondary-color:#FF79DA;
 $tertiary-color:#99E2D0;
 
-@media screen and (max-width: 768px){
-    header{
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.logo{
+    height: 30px;
+    width: 50%;
+}
+.under{
+    font-weight: bold ;
+    width: 100%;
+    background-color: lightgray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.fa-location-dot{
+    margin-right: 15px;
+    margin-left: px;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    h1{
+        font-family: 'Shrikland', sans-serif;
+        font-size: 1.2em;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 20px;
+        color: black;
+    }
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    padding-bottom: 10px;
+    color: darkgrey;
+    width: 250px;
+}
+button{
+    align-content: center;
+    margin-left: 50px;
+}
+.pink-button{
+    color: white;
+    font-size: large;
+    border: #FF79DA solid 1px;
+    background-color: $secondary-color;
+    border-radius: 40px;
+    height: 50px;
+    width: 70%;
+    margin-bottom: 50px;
+}
+h2{
+    margin-left: 20px;
+    font-weight:bolder;
+}
+.function{
+    .fa-solid{
+        color: darkgrey;
+        margin-right: 30px;
+    }
+}
+.case{
+    display: flex;
+    width: 90%;
+    height: 70px;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
+    }
+.full:hover{
+    width: 90%;
+    background-color: lightgrey;
+    .fa-solid:hover{
+        color: $primary-color;
+    }
+}
+
+ol{
+    li{
+        display: flex;
         align-items: center;
-        padding-top: 10px;
+        margin-left: 30px;
     }
-    .logo{
-        height: 30px;
-        width: 50%;
-    }
-    .under{
-        font-weight: bold ;
-        width: 100%;
-        background-color: lightgray;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        display: flex;
-        justify-content: center;
-    }
-    .fa-location-dot{
-        margin-right: 15px;
-        margin-left: px;
-    }
-
-    body{
-        margin: 0px;
-        font-family: 'Roboto', sans-serif;
-        font-size: medium;
-        h1{
-            font-family: 'Shrikland', sans-serif;
-            font-size: 1.2em;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-    button{
-        align-content: center;
-    }
-    .pink-button{
-        font-size: large;
-        border: #FF79DA solid 1px;
-        background-color: $secondary-color;
-        border-radius: 40px;
-        height: 50px;
-        width: 70%;
-
-    }
-    .restaurant{
-        display: flex;
-    }
-    .image-space{
+}
+.restaurant{
+    display: flex;
+}
+.image-space{
+    height: 100px;
+    width: 200px;
+    .img{
         height: 100px;
         width: 200px;
-        .img{
-            height: 100px;
-            width: 200px;
-            object-fit: cover;
-        }
+        object-fit: cover;
     }
+}
+@media screen and (min-width: 769px){
+    
 }
