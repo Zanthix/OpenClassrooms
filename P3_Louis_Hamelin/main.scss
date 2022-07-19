@@ -32,7 +32,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: medium;
     h1{
-        font-family: 'Shrikland', sans-serif;
+        font-family: 'Shrikhand', sans-serif;
         font-size: 1.2em;
         display: flex;
         flex-wrap: wrap;
@@ -64,6 +64,7 @@ button{
     margin-bottom: 50px;
 }
 h2{
+    font-family: 'Shrikhand', sans-serif;
     margin-left: 20px;
     font-weight:bolder;
 }
@@ -85,11 +86,10 @@ h2{
 .full:hover{
     width: 90%;
     background-color: lightgrey;
-    .fa-solid:hover{
+    .fa-solid{
         color: $primary-color;
     }
 }
-
 ol{
     li{
         display: flex;
@@ -97,18 +97,42 @@ ol{
         margin-left: 30px;
     }
 }
+.global{
+    height: 70%;
+    width: 90%;
+}
 .restaurant{
     display: flex;
+    height: 200px;
+    width: 100%;
 }
-.image-space{
-    height: 100px;
-    width: 200px;
-    .img{
-        height: 100px;
-        width: 200px;
+.bloc-restaurant{
+    height: 200px;
+    width: 90%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    height: 100%;
+    border-radius: 15px;
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    img{
+        width: 90%;
         object-fit: cover;
     }
+
 }
+h3{
+    font-family: 'Shrikhand', sans-serif;
+}
+footer{
+    background-color: darkgrey;
+}
+
 @media screen and (min-width: 769px){
     
 }
