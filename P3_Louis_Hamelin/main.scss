@@ -56,7 +56,7 @@ button{
     color: white;
     font-size: large;
     border: #FF79DA solid 1px;
-    background-color: $secondary-color;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
     border-radius: 40px;
     height: 50px;
     width: 70%;
@@ -68,7 +68,7 @@ h2{
 }
 .function{
     .fa-solid{
-        color: darkgrey;
+        color: rgba(0,0,0,0.6);
         margin-right: 30px;
     }
 }
@@ -89,10 +89,55 @@ h2{
     }
 }
 ol{
+    p{
+        position: absolute;
+        left: 35px;
+        color: white;
+    }
+    .number{
+        top: 444px;
+    }
+    .number_two{
+        top: 535px;
+    }
+    .number_three{
+        top: 630px;
+    }
+    .circle{
+        position: absolute;
+        top: 442px;
+        left: 29px;
+        border-radius: 50%;
+        border: $primary-color 1px solid;
+        width: 20px;
+        height: 20px;
+        background-color: $primary-color;
+    }
+    .circle_two{
+        position: absolute;
+        top: 534px;
+        left: 29px;
+        border-radius: 50%;
+        border: $primary-color 1px solid;
+        width: 20px;
+        height: 20px;
+        background-color: $primary-color;
+    }
+    .circle_three{
+        position: absolute;
+        top: 628px;
+        left: 29px;
+        border-radius: 50%;
+        border: $primary-color 1px solid;
+        width: 20px;
+        height: 20px;
+        background-color: $primary-color;
+    }
     li{
         display: flex;
         align-items: center;
         margin-left: 30px;
+        font-weight: bold;
     }
 }
 .global{

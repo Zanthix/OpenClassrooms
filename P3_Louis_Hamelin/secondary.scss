@@ -2,6 +2,16 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    font-size:x-large;
+    .fa-regular{
+        margin-left: 60px;
+    }
+}
 h1, h3{
     font-family: 'Shrikhand', sans-serif;
 }
@@ -23,15 +33,30 @@ header{
 }
 .all-text{
     margin-left: 20px;
+    border-top-left-radius:20px;
+    border-top-right-radius: 20px;
 }
 .choix{
     font-size: medium;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    border: solid 1px lightgray;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.name{
+    margin-top: 5px;
+    margin-bottom: 2px;
 }
 .recette{
     font-size: small;
     font-weight: lighter;
-    margin-right: 20%;
+    margin-top: 0;
+    margin-bottom: 2px;
 }
 .align{
     display: flex;
@@ -42,9 +67,19 @@ header{
 .price{
     margin-right: 6%;
     font-size: small;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 button{
-    margin-left: 20px;
+    margin-left: 40px;
+    color: white;
+    font-size: large;
+    border: #FF79DA solid 1px;
+    background: linear-gradient(to bottom, #FF79DA, #9356DC);
+    border-radius: 40px;
+    height: 50px;
+    width: 70%;
+    margin-bottom: 50px;
 }
 footer{
     background-color: rgba(0,0,0,0.8);
