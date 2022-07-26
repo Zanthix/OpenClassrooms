@@ -37,10 +37,22 @@ header {
   height: 200px;
 }
 
+h2 {
+  font-size: 1rem;
+  font-weight: 100;
+  text-decoration: underline;
+  -webkit-text-decoration-color: lightblue;
+          text-decoration-color: lightblue;
+}
+
 .all-text {
   margin-left: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.plats {
+  margin-bottom: 30px;
 }
 
 .choix {
@@ -54,6 +66,7 @@ header {
   border-radius: 15px;
   margin-bottom: 20px;
   margin-right: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .name {
@@ -83,14 +96,14 @@ header {
 }
 
 button {
-  margin-left: 40px;
+  margin-left: 20%;
   color: white;
   font-size: large;
   border: #FF79DA solid 1px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   border-radius: 40px;
   height: 50px;
-  width: 70%;
+  width: 50%;
   margin-bottom: 50px;
 }
 
