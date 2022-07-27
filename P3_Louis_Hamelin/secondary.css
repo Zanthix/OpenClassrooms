@@ -32,9 +32,15 @@ header {
   margin-left: 20%;
 }
 
-.image-restaurant {
+.image {
   width: 100%;
   height: 200px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 h2 {
@@ -46,9 +52,13 @@ h2 {
 }
 
 .all-text {
-  margin-left: 20px;
+  position: relative;
+  top: -40px;
+  background-color: white;
+  padding-left: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  padding-top: 15px;
 }
 
 .plats {
@@ -66,7 +76,7 @@ h2 {
   border-radius: 15px;
   margin-bottom: 15px;
   margin-right: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .name {
@@ -76,7 +86,7 @@ h2 {
 
 .recette {
   font-size: small;
-  font-weight: lighter;
+  font-weight: 600;
   margin-top: 0;
   margin-bottom: 2px;
 }
@@ -89,10 +99,10 @@ h2 {
 }
 
 .price {
-  margin-right: 6%;
   font-size: small;
   margin-bottom: 5px;
   margin-top: 5px;
+  font-weight: bold;
 }
 
 button {
@@ -104,7 +114,8 @@ button {
   border-radius: 40px;
   height: 50px;
   width: 50%;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 footer {
