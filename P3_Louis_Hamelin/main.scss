@@ -163,6 +163,9 @@ ol{
     .fa-heart{
         font-size: 1.5rem;
     }
+    .fa-regular:focus{
+        display: none;
+    }
     .text-menu{
         margin-bottom: 5px;
         font-weight: bold;
@@ -170,6 +173,15 @@ ol{
     .text-restaurant{
         margin-top: 5px;
     }
+}
+.purple{
+    display: none;
+    color: $primary-color;
+    position: absolute;
+    right: 30px;
+    &:hover{
+        display: block;
+        }
 }
 .container{
     height: 200px;
