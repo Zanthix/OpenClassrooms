@@ -32,9 +32,8 @@ body {
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   display: flex;
-  flex-wrap: wrap;
   color: black;
   padding: 0 50px;
 }
@@ -98,19 +97,8 @@ ol p {
   left: 35px;
   color: white;
 }
-ol .number {
-  top: 444px;
-}
-ol .number_two {
-  top: 535px;
-}
-ol .number_three {
-  top: 630px;
-}
 ol .circle {
   position: absolute;
-  top: 442px;
-  left: 29px;
   border-radius: 50%;
   border: #9356DC 1px solid;
   width: 20px;
@@ -119,8 +107,6 @@ ol .circle {
 }
 ol .circle_two {
   position: absolute;
-  top: 534px;
-  left: 29px;
   border-radius: 50%;
   border: #9356DC 1px solid;
   width: 20px;
@@ -129,8 +115,6 @@ ol .circle_two {
 }
 ol .circle_three {
   position: absolute;
-  top: 628px;
-  left: 29px;
   border-radius: 50%;
   border: #9356DC 1px solid;
   width: 20px;
@@ -235,4 +219,80 @@ footer .fa-solid {
 footer p {
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  ol p {
+    left: 35px;
+  }
+  ol .number {
+    top: 444px;
+  }
+  ol .number_two {
+    top: 535px;
+  }
+  ol .number_three {
+    top: 630px;
+  }
+  ol .circle {
+    top: 442px;
+    left: 29px;
+  }
+  ol .circle_two {
+    top: 534px;
+    left: 29px;
+  }
+  ol .circle_three {
+    top: 628px;
+    left: 29px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .logo {
+    height: 100px;
+    width: 50%;
+  }
+  .under {
+    font-size: large;
+  }
+  h1 {
+    font-size: 1.6rem;
+    padding: 0 500px;
+  }
+  .middle p {
+    font-size: 1.4rem;
+  }
+  button {
+    margin-left: 170px;
+  }
+  .circle {
+    top: 512px;
+    left: 30px;
+  }
+  .number {
+    top: 514px;
+    left: 36px;
+  }
+  .circle_two {
+    top: 605px;
+    left: 30px;
+  }
+  .number_two {
+    top: 606px;
+    left: 36px;
+  }
+  .circle_three {
+    top: 694px;
+    left: 30px;
+  }
+  .number_three {
+    top: 695px;
+    left: 36px;
+  }
+  ol li {
+    margin-left: 600px;
+  }
+  ol .case {
+    width: 99%;
+  }
 }/*# sourceMappingURL=main.css.map */

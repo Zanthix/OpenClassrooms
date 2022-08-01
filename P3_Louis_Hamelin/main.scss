@@ -33,9 +33,8 @@ body{
     font-size: medium;
 }
 h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
     display: flex;
-    flex-wrap: wrap;
     color: black;
     padding: 0 50px;
 }
@@ -95,19 +94,8 @@ ol{
         left: 35px;
         color: white;
     }
-    .number{
-        top: 444px;
-    }
-    .number_two{
-        top: 535px;
-    }
-    .number_three{
-        top: 630px;
-    }
     .circle{
         position: absolute;
-        top: 442px;
-        left: 29px;
         border-radius: 50%;
         border: $primary-color 1px solid;
         width: 20px;
@@ -116,8 +104,6 @@ ol{
     }
     .circle_two{
         position: absolute;
-        top: 534px;
-        left: 29px;
         border-radius: 50%;
         border: $primary-color 1px solid;
         width: 20px;
@@ -126,8 +112,6 @@ ol{
     }
     .circle_three{
         position: absolute;
-        top: 628px;
-        left: 29px;
         border-radius: 50%;
         border: $primary-color 1px solid;
         width: 20px;
@@ -226,7 +210,84 @@ footer{
         margin-top: 5px;
     }
 }
-
+@media screen and (max-width: 768px){
+    ol{
+        p{
+            left: 35px;
+        }
+        .number{
+            top: 444px;
+        }
+        .number_two{
+            top: 535px;
+        }
+        .number_three{
+            top: 630px;
+        }
+        .circle{
+            top: 442px;
+            left: 29px;
+        }
+        .circle_two{
+            top: 534px;
+            left: 29px;
+        }
+        .circle_three{
+            top: 628px;
+            left: 29px;
+        }
+    }
+}
 @media screen and (min-width: 769px){
-    
+    .logo{
+        height: 100px;
+        width: 50%;
+    }
+    .under{
+        font-size: large;
+    }
+    h1{
+        font-size: 1.6rem;
+        padding: 0 500px;
+    }
+    .middle{
+        p{
+            font-size: 1.4rem;
+        }
+    }
+    button{
+        margin-left: 170px;
+    }
+    .circle{
+        top: 512px;
+        left: 30px;
+    }
+    .number{
+        top: 514px;
+        left: 36px;
+    }
+    .circle_two{
+        top: 605px;
+        left: 30px;
+    }
+    .number_two{
+        top: 606px;
+        left: 36px;
+    }
+    .circle_three{
+        top: 694px;
+        left: 30px;
+    }
+    .number_three{
+        top: 695px;
+        left: 36px;
+    }
+    ol{
+        li{
+            margin-left: 600px;
+    }
+    .case{
+        width: 99%;
+    }
+}
 }

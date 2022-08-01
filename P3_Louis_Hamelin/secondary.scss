@@ -118,3 +118,18 @@ footer{
         margin-bottom: 5px;
     }
 }
+@media screen and (min-width: 769px){
+    .logo{
+        height: 120px;
+    }
+    .fa-arrow-left{
+        font-size: xx-large;
+    }
+    h1{
+        margin-left: 45%;
+        font-size: xx-large;
+    }
+    button{
+        margin-left: 350px;
+    }
+}
