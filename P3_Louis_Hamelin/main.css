@@ -52,6 +52,11 @@ button {
   margin-left: 50px;
 }
 
+.hovering:hover {
+  filter: brightness(130%);
+  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
 .pink-button {
   color: white;
   font-size: large;

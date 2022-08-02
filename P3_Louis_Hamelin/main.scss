@@ -51,6 +51,10 @@ button{
     align-content: center;
     margin-left: 50px;
 }
+.hovering:hover{
+    filter: brightness(110%);
+    box-shadow: 5px 5px 15px rgba(0 0 0 0.5);
+}
 .pink-button{
     color: white;
     font-size: large;
@@ -74,7 +78,6 @@ h2{
 }
 .case{
     display: flex;
-    width: 90%;
     height: 70px;
     border: solid 1px lightgrey;
     border-radius: 15px;
@@ -82,7 +85,6 @@ h2{
     box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
     }
 .full:hover{
-    width: 90%;
     background-color: lightgrey;
     .fa-solid{
         color: $primary-color;
@@ -238,7 +240,7 @@ footer{
         }
     }
 }
-@media screen and (min-width: 769px){
+@media screen and (min-width: 768px){
     .logo{
         height: 100px;
         width: 50%;
@@ -256,7 +258,10 @@ footer{
         }
     }
     button{
-        margin-left: 170px;
+        margin-left: 200px;
+    }
+    .full:hover{
+        width: 99%;
     }
     .circle{
         top: 512px;
@@ -289,5 +294,5 @@ footer{
     .case{
         width: 99%;
     }
-}
+    }
 }
