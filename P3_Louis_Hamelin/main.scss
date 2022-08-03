@@ -47,10 +47,6 @@ button{
     align-content: center;
     margin-left: 50px;
 }
-.hovering:hover{
-    filter: brightness(110%);
-    box-shadow: 5px 5px 15px rgba(0 0 0 0.5);
-}
 .pink-button{
     color: white;
     font-size: large;
@@ -233,15 +229,15 @@ footer{
         }
         .circle{
             top: 450px;
-            left: 29px;
+            left: 30px;
         }
         .circle_two{
             top: 540px;
-            left: 29px;
+            left: 30px;
         }
         .circle_three{
             top: 632px;
-            left: 29px;
+            left: 30px;
         }
     }
 }
@@ -255,7 +251,7 @@ footer{
     }
     h1{
         font-size: 1.6rem;
-        padding: 0 500px;
+        padding: 0 200px;
     }
     .middle{
         p{
@@ -263,7 +259,7 @@ footer{
         }
     }
     button{
-        margin-left: 200px;
+        margin-left: 120px;
     }
     .full:hover{
         width: 99%;
@@ -300,4 +296,10 @@ footer{
         width: 99%;
     }
     }
+}
+@media screen and (min-width: 1024px) {
+    h1{
+        margin-left: 200px;
+    }
+    
 }
