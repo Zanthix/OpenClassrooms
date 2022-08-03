@@ -30,15 +30,11 @@ body{
 }
 h1{
     font-size: 1.3em;
-    display: flex;
     color: black;
     padding: 0 50px;
 }
 
 .middle{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0 20px;
     color: darkgrey;
     text-align: center;
@@ -55,11 +51,13 @@ button{
     border-radius: 40px;
     height: 50px;
     width: 70%;
+    margin: 0 auto;
+    display: block;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
     :hover{
         filter: brightness(120%);
-        box-shadow: 5px 5px 15px rgba(0 0 0 0.5);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
 }
 h2{
@@ -87,6 +85,11 @@ h2{
     }
 }
 ol{
+    padding-left: 0;
+    padding: 0 30px;
+    .case{
+        position: relative;
+    }
     p{
         position: absolute;
         left: 35px;
@@ -99,22 +102,9 @@ ol{
         width: 20px;
         height: 20px;
         background-color: $primary-color;
-    }
-    .circle_two{
-        position: absolute;
-        border-radius: 50%;
-        border: $primary-color 1px solid;
-        width: 20px;
-        height: 20px;
-        background-color: $primary-color;
-    }
-    .circle_three{
-        position: absolute;
-        border-radius: 50%;
-        border: $primary-color 1px solid;
-        width: 20px;
-        height: 20px;
-        background-color: $primary-color;
+        top: 8px;
+        left: -10px;
+        text-align: center;
     }
     li{
         display: flex;
@@ -207,6 +197,7 @@ footer{
         margin-bottom: 5px;
         margin-top: 5px;
     }
+    
 }
 @media screen and (max-width: 768px){
     header{
@@ -218,27 +209,7 @@ footer{
         p{
             left: 35px;
         }
-        .number{
-            top: 452px;
-        }
-        .number_two{
-            top: 542px;
-        }
-        .number_three{
-            top: 634px;
-        }
-        .circle{
-            top: 450px;
-            left: 30px;
-        }
-        .circle_two{
-            top: 540px;
-            left: 30px;
-        }
-        .circle_three{
-            top: 632px;
-            left: 30px;
-        }
+        
     }
 }
 @media screen and (min-width: 768px){
@@ -264,42 +235,16 @@ footer{
     .full:hover{
         width: 99%;
     }
-    .circle{
-        top: 512px;
-        left: 30px;
-    }
-    .number{
-        top: 514px;
-        left: 36px;
-    }
-    .circle_two{
-        top: 605px;
-        left: 30px;
-    }
-    .number_two{
-        top: 606px;
-        left: 36px;
-    }
-    .circle_three{
-        top: 694px;
-        left: 30px;
-    }
-    .number_three{
-        top: 695px;
-        left: 36px;
-    }
-    ol{
-        li{
-            margin-left: 600px;
-    }
     .case{
         width: 99%;
     }
-    }
 }
 @media screen and (min-width: 1024px) {
-    h1{
-        margin-left: 200px;
+    .case{
+        li{
+            width: 100%;
+            justify-content: center;
+        }
     }
     
 }

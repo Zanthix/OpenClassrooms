@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./main.scss:./styles.css",
+    "sass": "sass --watch ./main.scss:./main.css",
     "sass-secondary": "sass --watch ./secondary.scss:./secondary.css",
-    "prefix": "postcss ./styles.css --use autoprefixer -d ./prefixed/"
+    "prefix": "postcss ./main.css --use autoprefixer -d ./prefixed/"
   },
   "author": "",
   "license": "ISC"

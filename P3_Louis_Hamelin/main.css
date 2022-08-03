@@ -5,11 +5,6 @@ header {
   padding-top: 10px;
 }
 
-.logo {
-  height: 30px;
-  width: 50%;
-}
-
 .under {
   font-weight: bold;
   width: 100%;
@@ -22,7 +17,7 @@ header {
 
 .fa-location-dot {
   margin-right: 15px;
-  margin-left: px;
+  margin-left: 15px;
 }
 
 body {
@@ -33,15 +28,11 @@ body {
 
 h1 {
   font-size: 1.3em;
-  display: flex;
   color: black;
   padding: 0 50px;
 }
 
 .middle {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 0 20px;
   color: darkgrey;
   text-align: center;
@@ -52,11 +43,6 @@ button {
   margin-left: 50px;
 }
 
-.hovering:hover {
-  filter: brightness(130%);
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
-}
-
 .pink-button {
   color: white;
   font-size: large;
@@ -65,8 +51,14 @@ button {
   border-radius: 40px;
   height: 50px;
   width: 70%;
+  margin: 0 auto;
+  display: block;
   margin-bottom: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.pink-button :hover {
+  filter: brightness(120%);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -81,7 +73,6 @@ h2 {
 
 .case {
   display: flex;
-  width: 90%;
   height: 70px;
   border: solid 1px lightgrey;
   border-radius: 15px;
@@ -90,13 +81,19 @@ h2 {
 }
 
 .full:hover {
-  width: 90%;
   background-color: lightgrey;
 }
 .full:hover .fa-solid {
   color: #9356DC;
 }
 
+ol {
+  padding-left: 0;
+  padding: 0 30px;
+}
+ol .case {
+  position: relative;
+}
 ol p {
   position: absolute;
   left: 35px;
@@ -109,22 +106,9 @@ ol .circle {
   width: 20px;
   height: 20px;
   background-color: #9356DC;
-}
-ol .circle_two {
-  position: absolute;
-  border-radius: 50%;
-  border: #9356DC 1px solid;
-  width: 20px;
-  height: 20px;
-  background-color: #9356DC;
-}
-ol .circle_three {
-  position: absolute;
-  border-radius: 50%;
-  border: #9356DC 1px solid;
-  width: 20px;
-  height: 20px;
-  background-color: #9356DC;
+  top: 8px;
+  left: -10px;
+  text-align: center;
 }
 ol li {
   display: flex;
@@ -227,32 +211,14 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
+  header .logo {
+    height: 30px;
+  }
   ol p {
     left: 35px;
   }
-  ol .number {
-    top: 444px;
-  }
-  ol .number_two {
-    top: 535px;
-  }
-  ol .number_three {
-    top: 630px;
-  }
-  ol .circle {
-    top: 442px;
-    left: 29px;
-  }
-  ol .circle_two {
-    top: 534px;
-    left: 29px;
-  }
-  ol .circle_three {
-    top: 628px;
-    left: 29px;
-  }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .logo {
     height: 100px;
     width: 50%;
@@ -262,42 +228,24 @@ footer p {
   }
   h1 {
     font-size: 1.6rem;
-    padding: 0 500px;
+    padding: 0 200px;
   }
   .middle p {
     font-size: 1.4rem;
   }
   button {
-    margin-left: 170px;
+    margin-left: 120px;
   }
-  .circle {
-    top: 512px;
-    left: 30px;
-  }
-  .number {
-    top: 514px;
-    left: 36px;
-  }
-  .circle_two {
-    top: 605px;
-    left: 30px;
-  }
-  .number_two {
-    top: 606px;
-    left: 36px;
-  }
-  .circle_three {
-    top: 694px;
-    left: 30px;
-  }
-  .number_three {
-    top: 695px;
-    left: 36px;
-  }
-  ol li {
-    margin-left: 600px;
-  }
-  ol .case {
+  .full:hover {
     width: 99%;
+  }
+  .case {
+    width: 99%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .case li {
+    width: 100%;
+    justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
