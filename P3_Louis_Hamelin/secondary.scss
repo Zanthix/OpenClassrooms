@@ -95,6 +95,11 @@ h2{
     margin-bottom: 15px;
     margin-right: 20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    transform: translateX(0px);
+    transition: transform 1000ms;
+    &:hover{
+        transform: translateX(50px);
+    }
 }
 .name{
     margin-top: 5px;
@@ -154,7 +159,7 @@ footer{
         font-size: xx-large;
     }
     h1{
-        margin-left: 45%;
+        margin-left: 40%;
         font-size: xx-large;
     }
     button{
