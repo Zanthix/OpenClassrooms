@@ -83,6 +83,37 @@ h2{
 .plats{
     margin-bottom: 30px;
 }
+.choix_deux{
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    padding-right: 0;
+    border: solid 1px lightgray;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+    transition: transform 2000ms;
+    /* text-overflow: ellipsis; ... en cas de survol 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+    &:hover{
+        .check{
+            transform: translateX(0);
+        }
+    }
+    .check{
+        width: 20%;
+        transition: transform 2000ms;
+        background-color: red;
+        z-index: 100;
+        transform: translateX(110%);
+    }
+}
 .choix{
     font-size: medium;
     font-weight: bold;
@@ -95,10 +126,10 @@ h2{
     margin-bottom: 15px;
     margin-right: 20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-    transform: translateX(0px);
-    transition: transform 1000ms;
-    &:hover{
-        transform: translateX(50px);
+    .check{
+        height: 100%;
+        width: 20%;
+        background-color: red;
     }
 }
 .name{
