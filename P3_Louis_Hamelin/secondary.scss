@@ -1,3 +1,7 @@
+$primary-color: #9356DC;
+$secondary-color:#FF79DA;
+$tertiary-color:#99E2D0;
+
 .affichage{
     animation: fadein 1s;
 }
@@ -57,11 +61,37 @@ header{
     }
 }
 .icon{
-    margin-left: 70px;
-    color: lightgray;
-    transition: color 2000ms;
+    margin-left: 20%;
+    background: lightgrey;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     &:hover{
-        color: #FF79DA;
+        animation: coloring 2000ms;
+        background: linear-gradient(to bottom, $secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+@keyframes coloring{
+    0%{
+        background: lightgray;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: $secondary-color;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to bottom, $secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 h2{
@@ -83,7 +113,7 @@ h2{
 .plats{
     margin-bottom: 30px;
 }
-.choix_deux{
+.choix{
     font-size: medium;
     font-weight: bold;
     display: flex;
@@ -114,7 +144,7 @@ h2{
         transform: translateX(110%);
     }
 }
-.choix{
+/*.choix{
     font-size: medium;
     font-weight: bold;
     display: flex;
@@ -131,10 +161,14 @@ h2{
         width: 20%;
         background-color: red;
     }
-}
+}*/
 .name{
     margin-top: 5px;
     margin-bottom: 2px;
+}
+.plate_name{
+    margin-top: 5px;
+    margin-bottom: 3px;
 }
 .recette{
     font-size: small;

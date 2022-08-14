@@ -121,7 +121,7 @@ button {
   margin-bottom: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
-.pink-button :hover {
+.pink-button:hover {
   filter: brightness(120%);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
@@ -206,9 +206,6 @@ ol li {
 }
 .text .fa-heart {
   font-size: 1.5rem;
-}
-.text .fa-regular:focus {
-  display: none;
 }
 .text .text-menu {
   margin-bottom: 5px;

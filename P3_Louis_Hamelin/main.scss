@@ -96,7 +96,7 @@ button{
     display: block;
     margin-bottom: 50px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-    :hover{
+    &:hover{
         filter: brightness(120%);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     }
@@ -175,9 +175,6 @@ ol{
     border-bottom-right-radius: 15px;
     .fa-heart{
         font-size: 1.5rem;
-    }
-    .fa-regular:focus{
-        display: none;
     }
     .text-menu{
         margin-bottom: 5px;
