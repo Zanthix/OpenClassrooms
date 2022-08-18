@@ -127,7 +127,6 @@ h2{
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
     overflow: hidden;
     transition: transform 2000ms;
-    /* text-overflow: ellipsis; ... en cas de survol*/
     .name{
         flex-grow: 1;
         margin-top: 5px;
@@ -141,6 +140,7 @@ h2{
     
     &:hover{
         .check{
+            animation: appear 2000ms;
             width: 20%;
         }
         .fa-circle-check{
@@ -161,7 +161,15 @@ h2{
             text-align: center;
             display: block;
             padding: 20px;
-        }
+    }
+}
+@keyframes appear{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 20%;
+    }
 }
 
 .plate_name{

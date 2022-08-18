@@ -173,7 +173,6 @@ h2 {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: transform 2000ms;
-  /* text-overflow: ellipsis; ... en cas de survol*/
 }
 .choix .name {
   flex-grow: 1;
@@ -186,6 +185,8 @@ h2 {
   text-overflow: ellipsis;
 }
 .choix:hover .check {
+  -webkit-animation: appear 2000ms;
+          animation: appear 2000ms;
   width: 20%;
 }
 .choix:hover .fa-circle-check {
@@ -206,6 +207,23 @@ h2 {
   padding: 20px;
 }
 
+@-webkit-keyframes appear {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 20%;
+  }
+}
 .plate_name {
   margin-top: 5px;
   margin-bottom: 10px;
