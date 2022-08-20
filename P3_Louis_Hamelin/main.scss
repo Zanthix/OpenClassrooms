@@ -9,13 +9,13 @@ html, body{
     position: relative;
   }
   .overlay{
-    position: absolute;
+    position: unset;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
     opacity: 0;
+    background-color: white;
     animation: fade 3s linear;
 }
 .loading{
@@ -39,9 +39,11 @@ html, body{
     from{
         opacity: 1;
         z-index: 10;
+        position: absolute;
     }to{
         opacity: 0;
-        z-index: -1;
+        z-index: -10;
+        position: unset;
     }
 }
 header{
@@ -83,6 +85,7 @@ h1{
 button{
     align-content: center;
     margin-left: 50px;
+    z-index: 51;
 }
 .pink-button{
     color: white;
@@ -120,7 +123,7 @@ h2{
     box-shadow: 5px 5px 10px rgb(0 0 0 / 15%);
     }
 .full:hover{
-    background-color: lightgrey;
+    background-color: rgba(0,0,0,0.1);
     .fa-solid{
         color: $primary-color;
     }
@@ -263,6 +266,7 @@ footer{
     a{
         color: white;
         text-decoration: none;
+        z-index: 50;
     }
     
 }

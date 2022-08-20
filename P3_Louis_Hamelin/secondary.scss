@@ -44,7 +44,10 @@ header{
     flex-direction: row;
     align-items: center;
     margin-left: 4%;
-    
+    p{
+        width: 20px;
+        height: 20px
+    }  
 }
 .logo{
     height: 30px;
@@ -126,7 +129,7 @@ h2{
     margin-right: 20px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
     overflow: hidden;
-    transition: transform 2000ms;
+    transition: transform 3000ms;
     .name{
         flex-grow: 1;
         margin-top: 5px;
@@ -140,38 +143,33 @@ h2{
     
     &:hover{
         .check{
-            animation: appear 2000ms;
             width: 20%;
         }
         .fa-circle-check{
             transform: rotate(360deg);
+            opacity: 1;
+        }
+        .name{
+            overflow: hidden;
         }
     }
     .check{
         width: 0;
-        transition: transform 2000ms;
+        transition: all 1500ms;
         background-color: $tertiary-color;
         z-index: 100;
+        display: flex;
+        justify-content: center;
         
     }
     .fa-circle-check{
             color: white;
             font-size: x-large;
-            transition: transform 2000ms;
-            text-align: center;
-            display: block;
+            transition: all 1500ms;
             padding: 20px;
+            opacity: 0;
     }
 }
-@keyframes appear{
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 20%;
-    }
-}
-
 .plate_name{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -201,6 +199,10 @@ button{
     width: 50%;
     margin-bottom: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    &:hover{
+        filter: brightness(120%);
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    }
 }
 footer{
     background-color: rgba(0,0,0,0.8);
@@ -226,10 +228,21 @@ footer{
         font-size: xx-large;
     }
     h1{
-        margin-left: 40%;
+        position: relative;
         font-size: xx-large;
+        text-align: center;
+    }
+    .icon{
+        position: absolute;
+        right: 20px;
+        top: 7px;
     }
     button{
         margin-left: 350px;
+    }
+    .choix{
+        .fa-circle-check{
+            padding: 23px;
+        }
     }
 }
