@@ -311,9 +311,13 @@ footer{
     .full:hover{
         width: 99%;
     }
+    li{
+        justify-content: center;
+    }
     .case{
         width: 99%;
     }
+    
 }
 @media screen and (min-width: 1024px) {
     .case{
