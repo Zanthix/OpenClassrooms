@@ -27,7 +27,8 @@ html, body{
     background: linear-gradient(to bottom, $secondary-color, $primary-color);
     top: 50%;
     left: 50%;
-    transform: scale(1.5), rotate(0deg);
+    transform: scale(1.5);
+    transform: rotate(0deg);
     animation: spin 3s infinite linear;
 }
 @keyframes spin{
@@ -150,7 +151,7 @@ ol{
         left: -10px;
         text-align: center;
     }
-    li{
+    span{
         display: flex;
         align-items: center;
         margin-left: 30px;

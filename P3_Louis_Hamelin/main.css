@@ -27,7 +27,8 @@ body {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   top: 50%;
   left: 50%;
-  transform: scale(1.5), rotate(0deg);
+  transform: scale(1.5);
+  transform: rotate(0deg);
   -webkit-animation: spin 3s infinite linear;
           animation: spin 3s infinite linear;
 }
@@ -180,7 +181,7 @@ ol .circle {
   left: -10px;
   text-align: center;
 }
-ol li {
+ol span {
   display: flex;
   align-items: center;
   margin-left: 30px;
