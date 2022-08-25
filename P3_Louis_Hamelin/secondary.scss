@@ -219,6 +219,11 @@ footer{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+    a{
+        color: white;
+        text-decoration: none;
+        z-index: 50;
+    }
 }
 @media screen and (min-width: 769px){
     .logo{
