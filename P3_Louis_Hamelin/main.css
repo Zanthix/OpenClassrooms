@@ -343,7 +343,7 @@ footer a {
 }
 @media screen and (min-width: 768px) {
   .logo {
-    height: 100px;
+    height: 50px;
     width: 50%;
   }
   .under {
@@ -370,6 +370,9 @@ footer a {
   }
 }
 @media screen and (min-width: 1024px) {
+  .logo {
+    height: 100px;
+  }
   .case li {
     width: 100%;
     justify-content: center;
